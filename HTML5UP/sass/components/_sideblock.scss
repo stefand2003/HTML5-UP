@@ -1,0 +1,424 @@
+.sideblock {
+  .mainbody__intro--fox {
+    display: none;
+  }
+
+  @media only screen and (max-width: 659px) {
+    &__card--start {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      background-color: #f4f4f4;
+      padding-top: 50px;
+
+      img {
+        max-width: 350px;
+      }
+
+      .card-info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        height: 80px;
+        width: 350px;
+
+        background-color: white;
+        border: 0.5px gray solid;
+
+        ul {
+          margin-left: 20px;
+          font-size: 14px;
+          font-weight: bold;
+          font-family: Arial, Helvetica, sans-serif;
+          color: black;
+
+          .shrink {
+            font-size: 10px;
+            color: gray;
+            margin-top: 5px;
+          }
+        }
+
+        img {
+          margin-right: 20px;
+          width: 40px;
+        }
+      }
+    }
+
+    &__card--middle {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      background-color: #f4f4f4;
+      padding-top: 30px;
+
+      img {
+        max-width: 350px;
+      }
+
+      .card-info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        height: 80px;
+        width: 350px;
+
+        background-color: white;
+        border: 0.5px gray solid;
+
+        ul {
+          margin-left: 20px;
+          font-size: 14px;
+          font-weight: bold;
+          font-family: Arial, Helvetica, sans-serif;
+          color: black;
+
+          .shrink {
+            font-size: 10px;
+            color: gray;
+            margin-top: 5px;
+          }
+        }
+
+        img {
+          margin-right: 20px;
+          width: 40px;
+        }
+      }
+    }
+
+    &__card--end {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      background-color: #f4f4f4;
+      padding-top: 30px;
+      padding-bottom: 50px;
+
+      border-bottom: 0.5px gray solid;
+
+      img {
+        max-width: 350px;
+      }
+
+      .card-info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        height: 80px;
+        width: 350px;
+
+        background-color: white;
+        border: 0.5px gray solid;
+
+        ul {
+          margin-left: 20px;
+          font-size: 14px;
+          font-weight: bold;
+          font-family: Arial, Helvetica, sans-serif;
+          color: black;
+
+          .shrink {
+            font-size: 10px;
+            color: gray;
+            margin-top: 5px;
+          }
+        }
+
+        img {
+          margin-right: 20px;
+          width: 40px;
+        }
+      }
+    }
+
+    &__minicards {
+      background-color: #f4f4f4;
+      // padding-top: 30px;
+
+      // border-bottom: 0.5px gray solid;
+      // padding: 25px;
+
+      .kidsbook {
+        display: flex;
+        gap: 30px;
+
+        max-width: 350px;
+        border-bottom: 0.5px gray solid;
+        padding: 25px;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        ul {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+          justify-content: center;
+
+          letter-spacing: 1px;
+
+          .kidsbook__shrink {
+            font-size: 10px;
+            color: gray;
+            letter-spacing: 2px;
+          }
+        }
+
+        li {
+          font-size: 12px;
+          font-weight: bold;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+      }
+    }
+
+    &__about {
+      background-color: #f4f4f4;
+      padding: 50px;
+
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+
+      letter-spacing: 2px;
+
+      &--title {
+        font-size: 16px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      &--para {
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      &--learn-more {
+        width: 320px;
+        border-radius: 0px;
+        height: 50px;
+        background-color: transparent;
+        border: 1px gray solid;
+
+        font-size: 14px;
+        font-weight: bold;
+        color: rgb(92, 91, 91);
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    }
+
+    &__signature {
+      background-color: #f4f4f4;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+
+      padding-bottom: 50px;
+
+      &--social-media {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        // border: 1px red solid;
+
+        padding-top: 50px;
+        margin-left: 50px;
+        width: 320px;
+
+        border-top: 0.5px gray solid;
+
+        img {
+          width: 20px;
+        }
+      }
+
+      .copyright {
+        // border: 1px red solid;
+        margin-left: 50px;
+        font-size: 13px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        color: gray;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 660px) {
+    &__cardgrid {
+      display: grid;
+      justify-items: center;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      padding: 20px;
+      gap: 20px;
+
+      background-color: #f4f4f4;
+
+      img {
+        width: 300px;
+      }
+
+      .card-info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        height: 80px;
+        width: 300px;
+
+        background-color: white;
+
+        border: 0.5px gray solid;
+
+        ul {
+          margin-left: 20px;
+          font-size: 14px;
+          font-weight: bold;
+          font-family: Arial, Helvetica, sans-serif;
+          color: black;
+
+          .shrink {
+            font-size: 10px;
+            color: gray;
+            margin-top: 5px;
+          }
+        }
+
+        img {
+          margin-right: 20px;
+          width: 40px;
+        }
+      }
+
+      .profile {
+        width: 30px !important;
+      }
+    }
+
+    &__minicards {
+      border-top: 0.5px gray solid;
+    }
+
+    &__minicards--pieces {
+      background-color: #f4f4f4;
+      padding-top: 40px;
+
+      .kidsbook {
+        display: flex;
+        gap: 30px;
+
+        width: 800px;
+        padding-left: 53px;
+        // border-top: 0.5px gray solid;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        img {
+          width: 65px;
+        }
+
+        ul {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+          justify-content: center;
+
+          letter-spacing: 1px;
+
+          .kidsbook__shrink {
+            font-size: 10px;
+            color: gray;
+            letter-spacing: 2px;
+          }
+        }
+
+        li {
+          font-size: 12px;
+          font-weight: bold;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+      }
+    }
+
+    &__about {
+      background-color: #f4f4f4;
+      padding: 50px;
+
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+
+      letter-spacing: 2px;
+
+      &--title {
+        font-size: 16px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      &--para {
+        font-size: 12px;
+        max-width: 700px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      &--learn-more {
+        width: 200px;
+        border-radius: 0px;
+        height: 40px;
+        background-color: transparent;
+        border: 1px gray solid;
+
+        font-size: 14px;
+        font-weight: bold;
+        color: rgb(92, 91, 91);
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    }
+    &__signature {
+      background-color: #f4f4f4;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+
+      padding-bottom: 50px;
+
+      &--social-media {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        // border: 1px red solid;
+
+        padding-top: 50px;
+        margin-left: 50px;
+        width: 320px;
+
+        border-top: 0.5px gray solid;
+
+        img {
+          width: 20px;
+        }
+      }
+
+      .copyright {
+        // border: 1px red solid;
+        margin-left: 50px;
+        font-size: 13px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        color: gray;
+      }
+    }
+  }
+}

@@ -1,0 +1,141 @@
+@media only screen and (max-width: 2000px) and (min-width: 900px) {
+  .desktop-grid {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: 1fr;
+
+    padding: 20px;
+    gap: 20px;
+
+    max-width: 100vw;
+
+    background-color: #f4f4f4;
+    // border: 2px green solid;
+
+    &--main {
+      grid-column: 2;
+      grid-row: 1;
+
+      max-width: 1400px;
+      padding-right: 30px;
+      margin-top: 20px;
+
+      .mainbody__intro {
+        display: none;
+      }
+
+      .mainbody__article {
+        background-color: white;
+        border: 1px gray solid;
+
+        &--header {
+          gap: 10px;
+          height: 150px;
+
+          h1 {
+            padding-top: 15px;
+            padding-bottom: 0px;
+          }
+        }
+
+        img {
+          max-width: 1000px;
+        }
+
+        &--footer {
+          // border: 1px red solid;
+          max-width: fit-content;
+        }
+      }
+
+      .endpg-btns {
+        border-bottom: none;
+        // border: 1px blue solid;
+        align-items: center;
+        margin-top: -50px;
+      }
+    }
+
+    .sideblock {
+      // max-width: fit-content;
+      // border: 1px blue solid;
+      grid-column: 1;
+      grid-row: 1;
+
+      .mainbody__intro--fox {
+        display: block;
+
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-left: 35px;
+
+        img {
+          width: 35px !important;
+          margin-top: 20px;
+        }
+        h1 {
+          font-size: 22px;
+          font-weight: bold;
+          font-family: Arial, Helvetica, sans-serif;
+          width: 100px;
+          letter-spacing: 2px;
+          color: rgb(22, 22, 22);
+        }
+
+        h2 {
+          font-size: 14px;
+          width: 250px;
+          margin-bottom: 20px;
+        }
+      }
+
+      &__cardgrid {
+        grid: none;
+      }
+
+      &__minicards {
+        background-color: #f4f4f4;
+        // padding-top: 30px;
+
+        // border-bottom: 0.5px gray solid;
+        // padding: 25px;
+
+        .kidsbook {
+          display: flex;
+          gap: 30px;
+
+          max-width: 350px;
+          border-bottom: 0.5px gray solid;
+          padding: 25px;
+
+          margin-top: -30px;
+
+          margin-left: auto;
+          margin-right: auto;
+
+          ul {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            justify-content: center;
+
+            letter-spacing: 1px;
+
+            .kidsbook__shrink {
+              font-size: 10px;
+              color: gray;
+              letter-spacing: 2px;
+            }
+          }
+
+          li {
+            font-size: 12px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+          }
+        }
+      }
+    }
+  }
+}

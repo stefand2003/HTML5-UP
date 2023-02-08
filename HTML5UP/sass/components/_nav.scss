@@ -1,0 +1,115 @@
+.nav {
+  @media only screen and (max-width: 480px) {
+    height: 45px;
+    // border: 1px red dotted;
+    display: flex;
+    background-color: white;
+
+    &__logo {
+      font-size: 12px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      letter-spacing: 5px;
+      align-self: center;
+      margin-left: 10px;
+
+      flex-grow: 1;
+    }
+
+    &__features {
+      align-self: center;
+    }
+
+    &__lblock {
+      display: none;
+    }
+
+    &__rblock {
+      display: flex;
+      align-items: center;
+      margin-right: 5px;
+    }
+
+    &__rblock--search {
+      display: none;
+    }
+  }
+
+  @media only screen and (min-width: 480px) {
+    height: 45px;
+    // border: 1px red dotted;
+    display: flex;
+    background-color: white;
+
+    &__features {
+      align-self: center;
+    }
+
+    &__logo {
+      font-size: 12px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      letter-spacing: 5px;
+      align-self: center;
+      margin-left: 10px;
+
+      flex-grow: 1;
+    }
+
+    &__lblock {
+      display: none;
+    }
+
+    &__rblock {
+      display: flex;
+      align-items: center;
+      margin-right: 5px;
+    }
+
+    &__rblock--search {
+      margin-right: 10px;
+      border-left: 0.5px grey solid;
+      padding-left: 7px;
+    }
+
+    &__rblock--burger {
+      border-left: 0.5px grey solid;
+      padding-left: 7px;
+    }
+  }
+
+  @media only screen and (min-width: 900px) and (max-width: 2000px) {
+    &__logo {
+      flex-grow: 0;
+      width: 300px;
+      align-items: center;
+    }
+
+    &__features {
+      width: 100vw;
+      display: flex;
+      justify-content: space-between;
+      align-self: center;
+    }
+
+    &__lblock {
+      display: block;
+      font-size: 12px;
+      margin-bottom: 0rem;
+
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+
+    &__lblock--child {
+      border-right: 0.5px grey solid;
+      padding-right: 20px;
+    }
+
+    &__rblock {
+      display: flex;
+      margin-right: 10px;
+    }
+  }
+}
